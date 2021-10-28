@@ -1,0 +1,22 @@
+{
+  "name": "react-examples-repository",
+  "version": "1.0.0",
+  "description": "react examples project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivamgf/React-examples-repository.git"
+  },
+  "keywords": [
+    "react-examples"
+  ],
+  "author": "ivam galvao filho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ivamgf/React-examples-repository/issues"
+  },
+  "homepage": "https://github.com/ivamgf/React-examples-repository#readme"
+}

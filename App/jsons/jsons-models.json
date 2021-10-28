@@ -1,0 +1,13 @@
+{
+	"meta": {
+    "title": "Revisão de Redação",
+    "description": "Some description"
+  },
+  "sections": [
+  	{
+  		"component": "",
+  		"title": "",
+  		"parsers": [""]
+  	}
+  ]
+}
