@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/ivamgf/React-examples-repository/issues"
   },
-  "homepage": "https://github.com/ivamgf/React-examples-repository#readme"
+  "homepage": "https://github.com/ivamgf/React-examples-repository#readme",
+  "dependencies": {
+    "jest": "^27.3.1"
+  }
 }
