@@ -6,7 +6,7 @@ function promise1() {
   function testPromise(test1) {
     return new promise1(
       (resolve, reject) => {
-        if(typeOf test1 !== 'string')
+        if(typeOf (test1 !== 'string')
           reject(false);
       }
     );
