@@ -1,14 +1,16 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from "react";
 
 function exampleHook_1() {
-    const [userId, setUser] = useState('');
+  const [userId, setUser] = useState("");
 
-    const newUser = () => {
-        const userId = !userId ? 0 : 1;
-    };
+  const newUser = () => {
+    const userId = !userId ? 0 : 1;
+  };
 
-    useEffect(() => {
-        newUser();
-        setUser(userId);
-      }, [userId]);
+  useEffect(() => {
+    newUser();
+    setUser(userId);
+  }, [userId]);
 }
+
+export default exampleHook_1;
