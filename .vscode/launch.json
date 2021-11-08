@@ -1,0 +1,59 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    
+
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "Next: Node",
+      "env": {
+        "NODE_OPTIONS": "--inspect"
+      },
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/next",
+      "port": 9229
+    },
+    {
+      "type": "pwa-node",
+      "request": "attach",
+      "name": "Next: Node (Attach)",
+      "port": 9229,
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+    {
+      "type": "pwa-chrome",
+      "request": "launch",
+      "name": "Next: Chrome",
+      "url": "http://local.mesalva.com:3000",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "node",
+      "name": "Jest: Run and Debug (All tests)",
+      "request": "launch",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "disableOptimisticBPs": true,
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "cwd": "${workspaceFolder}",
+      "args": [
+        "--runInBand",
+        "--watchAll=false"
+      ]
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Next: Full",
+      "configurations": [
+        "Next: Node",
+        "Next: Chrome"
+      ]
+    }
+  ]
+}
